@@ -1,0 +1,43 @@
+body{
+    background-color: lightgreen;
+    font-family: calibri, sans-serif;
+}
+
+/*untuk tag grouping menggunakan tanda koma (,)*/
+h1,h2{
+    color: coral;
+}
+
+h1{
+    font-size: 50px;
+}
+
+/*
+untuk detail menggunakan spasi
+cara bacanya dari kanan ke kiri
+tolong carikan saya a yang ada di dalam li dan ada di dalam ul*/
+ul li a {
+    color: red;
+}
+
+ol li a {
+    color: saddlebrown;
+    font-weight: bold;
+}
+
+/*tanda cress (#) menunjuk pada id tag html*/
+#p1{
+    color: red;
+}
+/*tanda titik (.) menunjuk kepada kelas tag html*/
+.p2{
+    color: orange;
+}
+.cetak-tebal{
+    font-weight: bold;
+    font-style: oblique;
+}
+
+p.cetak-tebal{
+    font-size: 25px;
+}
