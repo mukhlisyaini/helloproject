@@ -41,3 +41,36 @@ ol li a {
 p.cetak-tebal{
     font-size: 25px;
 }
+
+/*mulai pseudo class*/
+.hello:hover{
+    color: green;
+    font-size: 30px;
+}
+.hello:active{
+    color: hotpink;
+}
+.hello:visited{
+    color: gray;
+}
+
+/*pembahasan child
+maksud kode di bawah adalah a adalah anak pertama dari li dan li adalah anak dari ol*/
+ol li:first-child a {
+    color: indigo;
+}
+
+ol li:nth-child(2n) a{
+    color: lawngreen;
+    font-size: 20px;
+}
+
+ol li:nth-child(odd) a:hover{
+    color: black;
+    font-size: 20px;
+}
+
+/*implementasi :first-of-type dan :last-of-type*/
+p:last-of-type{
+    background-color: cyan;
+}
