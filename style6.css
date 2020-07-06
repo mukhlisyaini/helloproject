@@ -1,0 +1,100 @@
+.header {
+    font-family: 'Times New Roman', Times, serif;
+    color: orangered;
+    font-size: 30px;
+    text-align: center;
+    background-color: palegoldenrod;
+}
+
+.navigasi {
+    font-family: tahoma;
+    color: peru;
+    /*background-color: royalblue;*/
+}
+
+.navigasi a {
+    display: inline-block;
+    background-color: khaki;
+    width: 200px;
+    height: 200px;
+}
+
+.isi {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: seashell;
+    width: 1019px;
+}
+
+.isi h2 {
+    background-color: lemonchiffon;
+}
+
+.isi span {
+    background-color: springgreen;
+}
+
+.isi img {
+    width: 100px;
+}
+
+.footer {
+    font-family: Trebuchet MS;
+    background-color: slategray;
+}
+
+/*mulai bermain overflow*/
+
+.diva1 {
+    background-color: lightsalmon;
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+    display: inline-block;
+
+
+}
+
+.diva2 {
+    background-color: lime;
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+    /*mulai belajar box*/
+    margin-left: 10px;
+    display: inline-block;
+
+}
+
+.diva3 {
+    background-color: lime;
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.divb,
+.divc,
+.divd {
+    width: 200px;
+    overflow: auto;
+
+}
+
+.divb {
+    background-color: lightgreen;
+}
+
+.divc {
+    background-color: lightblue;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.divd {
+    background-color: lightseagreen;
+    /*margin auto harus diset keduanya, left dan right - otomatis mengikuti parent*/
+    margin-left: auto;
+    margin-right: auto;
+}

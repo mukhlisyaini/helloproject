@@ -1,0 +1,32 @@
+body {
+    font-family: tahoma;
+    background-color: burlywood;
+    color: chartreuse;
+}
+
+a {
+    color: inherit;
+}
+
+/*ini konsep implementasi bahwa berat HTML<class<id sehingga id lebih spesifik/berat dari yang lain
+jika ada inline di halaman html, maka inline yang lebih besar*/
+#p1 {
+    color: red;
+}
+
+/*bagian ini akan menimpa p bagian sebelumnya, jika ada selector yang sama*/
+p {
+    color: blue;
+}
+
+ol#pemrograman li {
+    color: maroon
+}
+
+.favorit {
+    color: mediumspringgreen;
+}
+
+ol li#favorit {
+    color: olive;
+}
