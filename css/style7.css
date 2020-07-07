@@ -1,9 +1,84 @@
-.head {}
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 10px;
+}
 
-.link {}
+body {
+    font: 16px/28px Arial, sans-serif;
+    background-color: khaki;
+    color: #333;
+    background-image: url(../resource/moroccan-flower.png);
+}
 
-.hero {}
+.head {
+    padding: 20px;
+    padding-bottom: 10px;
+}
 
-.isi {}
+.head .judul {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
 
-.footer {}
+.link a {
+    text-decoration: none;
+    color: salmon;
+    padding: 3px;
+}
+
+/*cek lebih jauh di 
+w3schools.com/colors/colors_name.asp
+*/
+
+.link a:hover {
+    background-color: seagreen;
+    color: white;
+}
+
+.hero {
+    height: 250px;
+    background-image: url(../resource/bg-hero.png);
+    background-size: cover;
+    background-position: 0 -50px;
+    /*posisi pertama untuk horizontal kedua untuk vertikal*/
+    border-top: 5px solid lightskyblue;
+    border-bottom: 5px solid lightsalmon;
+}
+
+/*gambar gratis di unsplash.com*/
+.isi {
+    padding: 10px;
+}
+
+.isi h2 {
+    font-size: 40px;
+}
+
+.isi .meta {
+    margin-top: -30px;
+    font-size: 12px;
+}
+
+.isi p {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.meta a {
+    color: salmon;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: slategray;
+}
+
+.footer .copy {
+    text-align: center;
+}
+
+/*untuk gambar pattern
+subtlepatterns.com*/
