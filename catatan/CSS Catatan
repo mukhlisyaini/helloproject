@@ -1,0 +1,259 @@
+csszengarden.com
+referensi 1 halaman bisa diganti-ganti style CSSnya
+
+www.w3schools.com
+
+referensi property dan value
+developer.mozilla.org/en-US/docs/Web/CSS/Reference
+css-tricks.com/almanac
+
+tempat website untuk coding
+codepen.io
+
+tempat pilih kode warna
+colorpicker.com
+
+website tempat mencari gambar pattern
+subtlepatterns.com
+
+struktur css
+
+selector {property:value;}
+
+penempatan css dalam file html
+- satu file
+- terpisah
+
+satu file
+embed - <style></style>
+inline - <p style="color:lightblue;"></p>
+
+terpisah
+<link rel="stylesheet" href="style.css">
+
+font style - font jadi bercetak miring
+- normal
+- italic
+- oblique
+
+font-family - jenis font
+- nama font
+- generic family
+
+fontsize - ukuran font
+- px
+- %
+- em
+
+font-weight - ketebalan
+- lighter
+- normal
+- 100-900
+- bold
+- bolder
+
+font-varian - mengubah menjadi small caps
+- normal
+- small caps
+
+line-height - mengatur spasi antar baris
+- px
+- normal
+- em
+
+Penyingkatan penulisan
+body {
+	font: font-style, font-variant, font-weight, font-size, line-height, font-family
+}
+
+font: oblique normal bold 16px/18px helvetica,arial, sans-serif
+
+text
+color
+- nama warna - red, blue
+- hexadecimal -#ff0000, #20b2aa
+- rgb - rgb(255,0,0)
+
+text-align - format paragraf
+- left
+- right
+- center
+- justify
+text-indent - indentasi paragraf
+- px/ %/ em
+text-decoration - dekorasi
+- none
+- underline
+- overline
+- line-through
+
+text-transform - mengubah jenis huruf menjadi besar, kecil, atau kapital
+- lowercase
+- capitalize
+
+letter-spacing - spasi huruf
+- normal
+- px
+word-spacing - spasi antar kata 
+
+background
+----
+background-color
+background-image
+background-position
+- top - left/center/right
+- center - left/center/right
+- bottom - left/center/right
+- x% y%
+- x-pos y-pos
+background-repeat
+
+shothand
+background: color url() position repeat;
+
+selector
+----
+element html
+id
+class
+complex selector
+
+lebih jauh - id
+1 sebuah element html hanya boleh memiliki 1 id
+2 setiap halaman hanya boleh memiliki 1 elemen dengan id tersebut
+3 dapat digunakan sebagai penanda halaman untuk link
+4 digunakan juga untuk javascript
+5 sebaiknya tidak digunakan untuk CSS (lebih baik gunakan class) - ini terkait beban, ilustrasinya: html=beban 1, id=beban 100, class=beban 10.
+
+lebih jauh - class
+
+pseudo class - kelas semu - hanya aktif pada keadaan tertentu
+berhubungan dengan link
+:link
+:hover
+:active
+:visited
+
+Berhubungan dengan posisi element
+:first-child - memilih element pertama dari sebuah parent
+:last-child - memilih element terakhir dari sebuah parent
+:nth-child(n) - memilih element ke-n dari sebuah parent - 
+n - bisa berarti urutan - 1, 2, 3
+n - bisa berarti pola - 2n,3n+2, 4n-1
+n - bisa berarti ganjil atau genap - even & odd
+
+berhubungan dengan tag
+first-of-type
+las-of-type
+
+css inheritance
+color, font, letter-spacing, line-height, list-style, text-align, text-indent, text-transform, visibility, white-space
+
+specificity
+urutan berat
+- inline
+- id
+- class
+- element
+
+kalkulator specificity
+specificity.keegan.st
+
+silabus css desain
+- display
+- dimensi
+- overflow
+- box model
+- float
+- position
+
+penting
+- box model
+- display
+- positioning
+
+Display
+- div - div {display:block;}
+- span - {display:inline;}
+terbagi menjadi
+- inline - element yang secara default tidak menambahkan baris baru, lebar dan tinggi elemen sebesar konten yang ada di dalamnya, tidak dapat diatur tinggi dan lebarnya, margin dan padding hanya berpengarus secara horizontal
+- inline-block - tidak ada element yang secara default memiliki inline-block, harus diubah secara manual, prilaku sama dengan elemen inline, kelebihannya bisa di atur tinggi dan lebarnya
+- block - element yang secara default menambahkan baris baru ketika dibuat, jika tidak diatur width nya makan akan otomatis memenuhi lebar dari browser/ parentnya, bisa diatur height dan witdht, di dalam block bisa menyimpan: tag dengan elemen inline, inline block, atau element blok lagi - element block h1-h6, p, ol, ul, li, form, hr, div - developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements
+- none - digunakan untuk menghilangkan sebuah element, {display:none;}
+
+dari blok ke inline {display:inline;}
+
+width & height
+px, %, in, cm, mm, pt (point), pc (pica) - pt dan pc untuk media cetak
+
+
+overflow
+visible, auto, hidden, scroll
+
+box model
+margin, border, padding, content
+
+margin overlapping
+vertikal - hanya diambil yang paling besar
+horizontal - dijumlahkan kedua marginnya
+
+negatif margin
+tinggal diberi minus (minus)
+
+margin auto
+untuk margin kiri dan kanan
+
+shorthand margin
+margin: 10px - artinya atas-bawah kiri-kanan masing2 10px
+margin: 10px 20px - artinya atas-bawah 10px kiri-kanan 20px
+margin: 10px auto - artinya atas-bawah 10px kiri-kanan relatif mengikuti parent
+margin: 10px auto 20px - artinya atas 10px bawah 20px kiri-kanan relatif mengikuti parent
+margin: 10px 20px 30px 40px - dibaca searah jarum jam mulai dari atas 10px kanan 20px bawah 30px kiri 10px
+
+box model-padding dan border
+- padding tidak bisa diberi nilai negatif, tidak seperti margin
+- padding tidak punya nilai auto
+- padding akan mempengaruhi ukuran box
+
+- border - ada 3 parameter - tebal(width) jenis(style) warna(color)
+untuk syle border ada : solid, dotted, dashed, double
+- border juga menambahkan ukuran kotak
+
+solusi agar tidak susah-susah kalkulasi padding dan border untuk ukuran box, menggunakan box-sizing (css3)
+
+konsep css-reset
+bahwa setiap element/tag html sudah memiliki bawaan sytle default (seperti margin, warna, dll), dengan css kita dapat mereset nilai default tersebut
+
+tujuan reset agar coder memiliki kendali penuh terhadap style yang dimiliki oleh element/ tag html
+
+cara melakukan reset
+- menggunakan selector universal - * {	:	;}, namun cara ini berat, karena akan mempengaruhi semua element html baik yang digunakan atau tidak
+- cara erick meyer - www.meyerweb.com - copy sintaks yang ada dan paste di awal file css.
+
+css float
+- none
+- left
+- right
+
+normal flow vs out-of flow
+normal flow seperti implementasi box model 
+out of flow implementasi float
+
+penggunaan float
+text wrapping - teks mengelilingi gambar/elemen lain
+image gallery
+multi-column layout
+
+cara membersihkan float
+- property overflow
+- menggunakan <div> kosong
+- teknik micro clearfix
+
+penggunaan clear - untuk membersihkan float
+- left
+- right
+- both
+
+http://nicolasgallagher.com/micro-clearfix-hack/
+copy css untuk clear, sehingga tidak perlu menambahkan <div> kosong
+

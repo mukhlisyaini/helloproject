@@ -1,0 +1,89 @@
+halaman web pw unpas
+pw1.if-unpas.org/2014
+
+
+HTML
+atribut tag
+accesskey
+- menentukan bisa diakses menggunakan keyboard/ shortcut
+
+class & id
+- sebagai tanda
+
+dir (direction)
+- arah tulisan
+
+lang
+- bahasa / language
+
+style
+- menyisipkan inline css
+
+tabindex
+- urutan jika membuat form (ketika pencet tab)
+
+title
+- memberikan judul pada sebuah title
+
+lengkapnya di
+www.w3school.com/tags
+
+pelajaran heading
+pada google chrome ada fasilitas inspect element - klik kanan pada halaman browser - setelah terbuka, ada kaca pembesar untuk melihat detail regional tertentu
+
+pelajaran heading
+<ol type=""></ol>
+1
+A
+a
+I
+i
+
+<ul type=""></ul>
+disc
+square
+circle
+
+Pelajaran hiperlink
+<a href=""></a>
+anchor
+
+#about
+indeks.html#contact
+untuk pindah ke bagian tertentu dari sebuah halaman
+
+<a target=""></a>
+_self
+_blank
+_parent - ini untuk frame
+_top - untuk frame
+
+image
+src
+alt
+title
+width - px, %
+height
+
+width dan height jika digunakan salah satu maka ukuran lainnya menyesuaikan, sebaiknya gunakan salah satu saja
+
+tabel
+simple
+tr
+td
+
+kompleks
+thead
+th
+tr
+td
+
+border - css
+cellspacing - css
+cellpadding - css
+colspan
+rowspan
+tiga parameter di atas sebaiknya menggunakan css
+
+Form
+

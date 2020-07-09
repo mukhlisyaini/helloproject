@@ -1,0 +1,67 @@
+cara push
+$ git add .
+$ git commit -m "Add existing file"
+$ git push origin branch-name
+
+
+git lokal
+git status
+git add
+git commit -m "pesan"
+
+git log -3 (untuk melihat 3 commit terakhir) atau nama file yang ingin ditracking 
+contoh git log --style.css
+git log --all --decorate --oneline --graph - menampilkan visualisasi branch
+
+membuat alias
+alias graph="git log --all --decorate --oneline --graph" - sehingga hanya perlu tulis graph
+
+untuk kembali
+git checkout 5digitawalkodehash namafile/seluruh
+
+commit sekalian
+git -a -m "pesan"
+
+menambahkan brach
+git branch nama-branch
+
+git checkout nama-branch - untuk berpindah working direktory ke branch yang diinginkan
+
+menggabungkan
+git merge nama-branch - setelah pindah sebelumnya ke branch master
+
+untuk remote yang sudah berubah - diverge
+- buat branch baru untuk merge
+- merge dengan branch baru - git merge origin/master
+- baru dari branch baru merge ke master - pindah head ke master - git merge namabranch
+
+menghapus branch
+git branch -d nama-branch
+
+git branch --merged - untuk melihat branch yang sudah di merge
+
+git remote -v - melihat identias remote
+
+git config --list
+
+git remote add origin url - ketika akan push repository lokal
+git push -u origin master - perintah push ke remote
+
+git fetch - untuk cek perubahan pada remote dan lokal
+
+menggunakan github pages
+nama repository
+mukhlisyaini.github.io
+
+fork
+- cari repo yang akan difork
+- tekan fork
+- clone ke lokal
+- git remote add username(tempat fork) dan url(tempat fork)
+- git remote -v - untuk cek remote aktif
+- git fetch username(tempat fork) - untuk cek posisi head remote repository
+- git merge username(tempat fork)/branch - ini untuk lokal
+- lakukan push setelah sinkronisasi dengan fork - git push -u origin master
+
+kode verifikasi github - visual code
+vscode://vscode.github-authentication/did-authenticate?windowId=1&code=b98003f574143afbc04a&state=41d041ca-67e5-438c-8b09-0014e0a1afb2
