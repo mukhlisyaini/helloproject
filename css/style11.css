@@ -1,0 +1,107 @@
+body {
+    height: 2000px;
+}
+
+.d1,
+.d2,
+.d3 {
+    width: 100px;
+    height: 100px;
+}
+
+.d1 {
+    background-color: magenta;
+}
+
+.d2 {
+    background-color: lawngreen;
+    margin-left: 50px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.d3 {
+    background-color: lightsalmon;
+}
+
+.d4,
+.d5,
+.d6 {
+    width: 100px;
+    height: 100px;
+}
+
+.d4 {
+    background-color: magenta;
+}
+
+.d5 {
+    background-color: lawngreen;
+    margin-left: 50px;
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.d6 {
+    background-color: lightsalmon;
+}
+
+.isi {
+    width: 600px;
+    height: 650px;
+    border: 10px solid green;
+    position: relative;
+}
+
+.d7,
+.d8,
+.d9 {
+    width: 100px;
+    height: 100px;
+}
+
+.d7 {
+    background-color: magenta;
+}
+
+.d8 {
+    background-color: lawngreen;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.d9 {
+    background-color: lightsalmon;
+}
+
+.isi2 {
+    width: 600px;
+    height: 650px;
+    border: 10px solid green;
+    position: relative;
+}
+
+.d10,
+.d11,
+.d12 {
+    width: 100px;
+    height: 100px;
+}
+
+.d10 {
+    background-color: magenta;
+}
+
+.d11 {
+    background-color: lawngreen;
+    position: fixed;
+    top: 0;
+    right: 200px;
+}
+
+.d12 {
+    background-color: lightsalmon;
+}

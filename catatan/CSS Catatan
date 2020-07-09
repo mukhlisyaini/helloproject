@@ -257,3 +257,32 @@ penggunaan clear - untuk membersihkan float
 http://nicolasgallagher.com/micro-clearfix-hack/
 copy css untuk clear, sehingga tidak perlu menambahkan <div> kosong
 
+
+CSS Positioning
+----------
+position
+- static
+- relative
+- absolute
+- fixed
+
+ketika position menggunakan selain static, maka dapat mengakses properti top, left, bottom, dan right
+
+ketika menggunakan relatif, dan tambahan properti top, bottom, dll, maka
+- ruang yang ditempat sebelumnya masih tersedia
+- relative maksudnya adalah posisi relatif berdasarkan posisi semula
+- jika diberi posisi top=0 left=0, maka akan kembali ke posisi semula
+
+catatan
+posisi relatif hanya digunakan untuk maju 1 dimensi bagi element yang dimaksud, sedangkan untuk menggerakkannya pada posisi tertentu lebih pada perubahan posisi awal yang diakibatkan oleh elemen lain
+
+position - absolute
+- membuat ruang awal yang ditempati dianggap tidak ada, sehingga elemen di bawahnya akan naik/ menempati ruang tersebut
+- ketika bergerak (diberi top, left, dll) element absolute posisinya relatif mengikuti posisi element parentnya, selama position parentnya juga non-static
+
+position - fixed
+- akan relatif terhadap window, bukan kepada parent
+- dia akan terkunci posisinya - seperti halnya pinned message
+
+penerapan fixed
+biasanya digunakan untuk membuat top bar, seperti halnya facebook dll
