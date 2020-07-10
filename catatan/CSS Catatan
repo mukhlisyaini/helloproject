@@ -286,3 +286,10 @@ position - fixed
 
 penerapan fixed
 biasanya digunakan untuk membuat top bar, seperti halnya facebook dll
+
+
+z-indeks
+untuk mengatur tumpukan-tumpukan dari elemen dengan position non-static
+
+properti top-left-bottom-right
+digabungkan dengan position-fixed maka posisi element bisa diatur baik untuk dikedepankan atau dikebelakangkan (dengan z-indeks)

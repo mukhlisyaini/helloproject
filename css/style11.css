@@ -105,3 +105,80 @@ body {
 .d12 {
     background-color: lightsalmon;
 }
+
+.isi3 {
+    width: 600px;
+    height: 650px;
+    border: 10px solid green;
+    position: relative;
+}
+
+.d13,
+.d14,
+.d15 {
+    width: 200px;
+    height: 200px;
+    font-size: 15px;
+    line-height: 200px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+}
+
+.d13 {
+    background-color: red;
+}
+
+.d14 {
+    background-color: green;
+    top: 100px;
+    left: 100px;
+}
+
+.d15 {
+    background-color: blue;
+    top: 200px;
+    left: 200px;
+}
+
+.isi4 {
+    width: 600px;
+    height: 650px;
+    border: 10px solid green;
+    position: relative;
+}
+
+.d16,
+.d17,
+.d18 {
+    width: 200px;
+    height: 200px;
+    font-size: 15px;
+    line-height: 200px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+}
+
+/*z indeks tinggal diatur, dengan nilai tertinggi menjadikan elemen paling depan
+9999 contoh nilai z indeks jika ingin paling depan
+-9999 contoh z indeks jika ingin paling belakang
+*/
+
+.d16 {
+    background-color: red;
+    z-index: 1;
+}
+
+.d17 {
+    background-color: green;
+    top: 100px;
+    left: 100px;
+    z-index: 2;
+}
+
+.d18 {
+    background-color: blue;
+    top: 200px;
+    left: 200px;
+}
